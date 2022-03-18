@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  min-height: 10vh;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  color: white;
+}
+input{
+  outline: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  padding: 30px;
+}
+.content button {
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgb(114, 99, 101);
+}
+.content ul {
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+}
+.content .valorFinal {
+  text-align: center;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.content .descp{
+  text-align:center;
+  text-orientation:justify;
+  font-size: 12px;
+}
+.content p {
+  text-align: left;
+}
+.content .convert {
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 340px;
+  padding: 30px;
+  line-height: 20px;
+  position: relative;
+  box-shadow: 0 0 5px rgb(200, 174, 189);
+  transition: 0.3s;
+  border-radius: 5%;
+}
+.content .title {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-size: 16px;
+  width: 90%;
+  padding: 10px;
+  text-indent: 5px;
+  margin: 10px;
+}
+.input-container {
+  margin-bottom: 20px;
+}

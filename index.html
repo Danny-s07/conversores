@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Conversores de moeda,temperatura,comprimeto e massa</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+<header>
+    <h1 class="page-title">
+      Conversores
+    </h1>
+  </header>
+
+
+
+<div class="content">
+      
+    <div class="convert">
+      <h2 class="title"> Moeda</h2>
+      <p class="descp"> Converte libras , reais e biticoin para dólares (e vice-versa) </p>
+      <ul>
+        <li>
+          <p> Converter: </p>
+          <input type="number" id="converter" placeholder="Digite o valor">
+
+          <input list="tipos" type="text" placeholder="Escolha primeira a moeda" id="moeda" autocomplete="off">
+          <datalist id="tipos">
+            <option value="dolar">
+            <option value="libra">
+            <option value="real">
+            <option value="biticoin">
+          </datalist>
+          <p> Para: </p>
+          <input list="tipos" type="text" placeholder="Escolha a  segunda moeda" id="moeda2" autocomplete="off">
+          <p class="valorFinal" id="valorFinal"></p>
+        </li>
+         </ul>
+      <button type="submit" onclick=conversorMoeda()>Converter</button> 
+      <button type="reset" onclick=limpar()>Limpar</button> 
+  </div>
+  
+  <div class="convert">
+        <h2 class="title"> Temperatura</h2>
+        <p class="descp"> Converte Fahrenheit ,Celsius e Kelvin vice-versa </p>
+        <ul>
+          <li>
+            <p> Converter: </p>
+            <input type="number" id="converterTemp"placeholder="Digite a temperatura">
+
+            <input list="tiposTemp" type="text" placeholder="Escolha uma temperatura" id="temp" autocomplete="off">
+            <datalist id="tiposTemp">
+              <option value="fahrenheit">
+              <option value="celsius">
+              <option value="kelvin">
+            </datalist>
+            <p> Para: </p>
+            <input list="tiposTemp" type="text" placeholder="Escolha uma temperatura" id="temp2" autocomplete="off">
+            <p class="valorFinal" id="valorFinalTemp"></p>
+          </li>
+           <button type="submit" onclick=conversorTemp()>Converter</button>
+           <button type="reset" onclick=limpar()>Limpar</button> 
+        </ul>
+    </div>
+<div class="convert">
+        <h2 class="title"> Comprimento</h2>
+        <p class="descp"> Converte Anos-luz, Quilometros,Centimetros e Metros e vice-versa </p>
+        <ul>
+          <li>
+            <p> Converter: </p>
+            <input type="number" id="converterComp" placeholder="Digite o comprimento">
+
+            <input list="tiposComp" type="text" placeholder="Escolha um comprimento" id="comp" autocomplete="off">
+            <datalist id="tiposComp">
+              <option value="anos-luz">
+              <option value="quilômetros(km)">
+              <option value="centimetros(cm)">
+               <option value="metros(m)">
+            </datalist>
+            <p> Para: </p>
+            <input list="tiposComp" type="text" placeholder="Escolha um comprimento" id="comp2" autocomplete="off">
+            <p class="valorFinal" id="valorFinalComp"></p>
+          </li>
+        </ul>
+              <button type="submit" onclick=conversorComp()>Converter</button>
+              <button type="reset" onclick=limpar()>Limpar</button> 
+      </div>
+       <div class="convert">
+        <h2 class="title"> Massa</h2>
+        <p class="descp"> Converte Qulograma, Grama, Miligrama e Tonelada e vice-versa </p>
+        <ul>
+          <li>
+            <p> Converter: </p>
+            <input type="number" id="converterMas" placeholder="Digite um valor">
+
+            <input list="tiposMas" type="text" placeholder="Escolha um tipo de massa" id="mass" autocomplete="off">
+            <datalist id="tiposMas">
+              <option value="quilograma(kg)">
+              <option value="grama(g)">
+              <option value="miligrama(mg)">
+               <option value="tonelada(t)">
+            </datalist>
+            <p> Para: </p>
+            <input list="tiposMas" type="text" placeholder="Escolha um tipo de massa" id="mass2" autocomplete="off">
+            <p class="valorFinal" id="valorFinalMassa"></p>
+          </li>
+        </ul>
+              <button type="submit" onclick=conversorMass()>Converter</button>
+              <button type="reset" onclick=limpar()>Limpar</button> 
+      </div>
+ 
+</body>  
+  
+   <footer class="rodape">
+
+        <div class="copyright">&copy; Copyright 2022 -  Desenvolvido por : Danny Salles </div>
+  
+    </footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
